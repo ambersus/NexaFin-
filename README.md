@@ -1,4 +1,4 @@
- # GenFin - The Generative Finance Assistant
+ # NEXAFIN - The Generative Finance Assistant
 
 GenFin is a cutting-edge, AI-powered financial platform designed for the Techathon. It leverages advanced generative AI and real-time data to provide users with comprehensive tools for market analysis, portfolio management, and startup simulation.
 
