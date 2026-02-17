@@ -1,36 +1,106 @@
- This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ # GenFin - The Generative Finance Assistant
 
-## Getting Started
+GenFin is a cutting-edge, AI-powered financial platform designed for the Techathon. It leverages advanced generative AI and real-time data to provide users with comprehensive tools for market analysis, portfolio management, and startup simulation.
 
-First, run the development server:
+## 🚀 Key Features
 
+### 🤖 FinBot AI Assistant
+A context-aware financial chatbot powered by Gemini AI, capable of answering complex queries, providing investment insights, and guiding users through the platform.
+
+### 📈 Market Tracker
+Real-time tracking of global markets, including stocks, crypto, and commodities, with interactive charts and trend analysis.
+
+### 🏢 Startup Builder (BuildSim)
+An advanced simulation tool for founders to model runway, revenue projections, team scaling, and funding scenarios with high fidelity.
+
+### 💼 Portfolio Generator
+Intelligent portfolio construction based on user risk profiles, investment goals, and market conditions. Optimize your asset allocation effortlessly.
+
+### 💰 Personal Finance
+Comprehensive tools for tracking income, expenses, and budgeting to maintain financial health.
+
+### 🧪 Scenario Engine
+Stress-test your financial strategies against various economic scenarios (e.g., recession, high inflation) to ensure resilience.
+
+### 🧠 Multi-Agent Analysis
+Utilizes a system of specialized AI agents (Debate, competitive analysis) to provide deep, multi-perspective financial insights.
+
+## 🛠️ Tech Stack
+
+### Frontend
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: React Context & Hooks
+
+### Backend
+- **Framework**: [FastAPI](https://fastapi.tiangolo.com/)
+- **Language**: Python
+- **Libraries**: `yfinance`, `pandas`
+
+### AI Integration
+- **Model**: Google Gemini API
+
+## 🏁 Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or higher)
+- Python (v3.8 or higher)
+- npm or yarn
+- A Google Gemini API Key
+
+### Installation
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/yourusername/GenFin_Final.git
+    cd GenFin_Final
+    ```
+
+2.  **Install Frontend Dependencies**:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
+
+3.  **Install Backend Dependencies**:
+    ```bash
+    pip install -r backend/requirements.txt
+    ```
+
+4.  **Set up Environment Variables**:
+    Create a `.env.local` file in the root directory and add your Gemini API key:
+    ```env
+    NEXT_PUBLIC_GEMINI_API_KEY=your_api_key_here
+    ```
+
+### 🚀 Running the Application
+
+#### Option 1: One-Click Start (Windows)
+Double-click `start.bat` or run it from the command line:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+start.bat
+```
+This script will automatically install backend dependencies, start the backend server, and launch the frontend development server.
+
+#### Option 2: Manual Start
+**Run Backend:**
+Open a terminal in the root directory:
+```bash
+cd backend
+python -m uvicorn main:app --reload
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Run Frontend:**
+Open a new terminal in the root directory:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📄 License
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is created for the Final Techathon. All rights reserved.
